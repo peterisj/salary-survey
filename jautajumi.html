@@ -36,7 +36,7 @@
 
 
         <script type="text/javascript" src="/assets/js/vendor/jquery.min.js"></script>
-        <script type="text/javascript" src="/assets/js/scrolloverflow.min.js"></script>
+        <script type="text/javascript" src="/assets/js/slimscroll.min.js"></script>
         <script type="text/javascript" src="/assets/js/iscroll.min.js"></script>
         <script type="text/javascript" src="/assets/js/vendor/jquery.fullpage.extensions.min.js"></script>
         <script type="text/javascript" src="/assets/js/slick.min.js"></script>
@@ -693,7 +693,7 @@
             $gSelectAnswer.prev().removeAttr('checked');
 
             // on answer click
-			$gSelectAnswer.on('click touchstart', function() {
+			$gSelectAnswer.on('click', function() {
 				var prev = $(this).prev();
 				prev.not(':checked').prop("checked", true);
 				// set new answer after .3s. Understand what you have selected (UX)
