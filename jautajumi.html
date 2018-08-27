@@ -81,7 +81,7 @@
 	      onsubmit="submitted=true;"
 	      target="hidden_iframe"
 	      autocomplete="on">
-					<div class="section section--question-1 ">
+					<div class="section section--question-1  js-section">
 					<article class="qbox">
 	<div class="qbox__wrap">
 		<div class="wrapper">
@@ -159,7 +159,7 @@
 					<input id="entry_1324579311" type="text" name="entry.1324579311" class="js-gfield-value">
 				</label>
 			</div>
-					<div class="section section--question-2 ">
+					<div class="section section--question-2  js-section">
 					<article class="qbox">
 	<div class="qbox__wrap">
 		<div class="wrapper">
@@ -237,7 +237,7 @@
 					<input id="entry_208482498" type="text" name="entry.208482498" class="js-gfield-value">
 				</label>
 			</div>
-					<div class="section section--question-3 ">
+					<div class="section section--question-3  js-section">
 					<article class="qbox">
 	<div class="qbox__wrap">
 		<div class="wrapper">
@@ -315,7 +315,7 @@
 					<input id="entry_1761040978" type="text" name="entry.1761040978" class="js-gfield-value">
 				</label>
 			</div>
-					<div class="section section--question-4 ">
+					<div class="section section--question-4  js-section">
 					<article class="qbox">
 	<div class="qbox__wrap">
 		<div class="wrapper">
@@ -393,7 +393,7 @@
 					<input id="entry_1539652393" type="text" name="entry.1539652393" class="js-gfield-value">
 				</label>
 			</div>
-					<div class="section section--question-5 ">
+					<div class="section section--question-5  js-section">
 					<article class="qbox">
 	<div class="qbox__wrap">
 		<div class="wrapper">
@@ -471,7 +471,7 @@
 					<input id="entry_90629445" type="text" name="entry.90629445" class="js-gfield-value">
 				</label>
 			</div>
-					<div class="section section--question-6 ">
+					<div class="section section--question-6  js-section">
 					<article class="qbox">
 	<div class="qbox__wrap">
 		<div class="wrapper">
@@ -549,7 +549,7 @@
 					<input id="entry_787001888" type="text" name="entry.787001888" class="js-gfield-value">
 				</label>
 			</div>
-					<div class="section section--question-7 ">
+					<div class="section section--question-7  js-section">
 					<article class="qbox">
 	<div class="qbox__wrap">
 		<div class="wrapper">
@@ -627,7 +627,7 @@
 					<input id="entry_1764273243" type="text" name="entry.1764273243" class="js-gfield-value">
 				</label>
 			</div>
-					<div class="section section--question-8 ">
+					<div class="section section--question-8  js-section">
 					<article class="qbox">
 	<div class="qbox__wrap">
 		<div class="wrapper">
@@ -705,7 +705,7 @@
 					<input id="entry_194891292" type="text" name="entry.194891292" class="js-gfield-value">
 				</label>
 			</div>
-					<div class="section section--question-9 ">
+					<div class="section section--question-9  js-section">
 					<article class="qbox">
 	<div class="qbox__wrap">
 		<div class="wrapper">
@@ -783,7 +783,7 @@
 					<input id="entry_327321806" type="text" name="entry.327321806" class="js-gfield-value">
 				</label>
 			</div>
-					<div class="section section--question-10 section--question-last">
+					<div class="section section--question-10 section--question-last js-section">
 					<article class="qbox">
 	<div class="qbox__wrap">
 		<div class="wrapper">
@@ -857,7 +857,7 @@
 </nav>
 	</div>
 </article>
-											<div class="section__button">
+											<div id="submit-button" class="section__button">
 							<a                 class="button button--disabled js-form-submit "
                 		                        >
 	Iesniegt testu
@@ -876,7 +876,8 @@
 <script type="text/javascript">
 	(function(){
 		$(document).ready(function() {
-            var $gSelectAnswer = $('.js-select-answer'),
+            var $htmlBody = $('html, body'),
+	            $gSelectAnswer = $('.js-select-answer'),
                 $hiddenAnswer = $('.js-answer-input');
 
 			$('#fullpage').fullpage({
@@ -955,6 +956,13 @@
 	                            .find('.button')
 	                            .removeClass('button--disabled');
                         }
+
+                        // if ($item.closest('.section').hasClass('section--question-last')) {
+                        //     console.log('aaa');
+                        //     $('.fp-scroller').animate({
+                        //         scrollTop: 100
+                        //     }, 2000);
+                        // }
                    });
                 });
 			}
