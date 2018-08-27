@@ -28,6 +28,7 @@
 
         <script type="text/javascript" src="/assets/js/vendor/jquery.min.js"></script>
         <script type="text/javascript" src="/assets/js/scrolloverflow.min.js"></script>
+        <script type="text/javascript" src="/assets/js/iscroll.min.js"></script>
         <script type="text/javascript" src="/assets/js/vendor/jquery.fullpage.extensions.min.js"></script>
         <script type="text/javascript" src="/assets/js/slick.min.js"></script>
         <script type="text/javascript" src="/assets/js/main.js"></script>
@@ -669,7 +670,7 @@
             var $gSelectAnswer = $('.js-select-answer');
 
 			$('#fullpage').fullpage({
-				fixedElements: '.page__footer, .page__nav, .scroll-indicator',
+                sectionSelector: '.section',
 				scrollingSpeed: 1000,
                 scrollOverflow: true,
 				verticalCentered: true

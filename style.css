@@ -216,10 +216,10 @@ html, body {
       max-width: 64rem;
       margin: 0 auto; } }
 
-/* line 6, scss/shame.scss */
+/* line 13, scss/shame.scss */
 .section {
   position: relative; }
-  /* line 9, scss/shame.scss */
+  /* line 16, scss/shame.scss */
   .section__button {
     position: absolute;
     bottom: 32px;
@@ -228,23 +228,23 @@ html, body {
     -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
             transform: translateX(-50%); }
-  /* line 16, scss/shame.scss */
+  /* line 23, scss/shame.scss */
   .section__answer {
     visibility: hidden;
     position: absolute;
     top: 0; }
-  /* line 22, scss/shame.scss */
+  /* line 29, scss/shame.scss */
   .section .qbox__wrap {
     padding-bottom: 64px;
     padding-bottom: 4rem; }
-  /* line 27, scss/shame.scss */
+  /* line 34, scss/shame.scss */
   .section:last-of-type .qbox__wrap {
     padding-bottom: 140px;
     padding-bottom: 8.75rem; }
-  /* line 35, scss/shame.scss */
+  /* line 42, scss/shame.scss */
   .section:nth-of-type(odd) .qbox__content, .section:nth-of-type(even) .qbox__content {
     position: relative; }
-    /* line 38, scss/shame.scss */
+    /* line 45, scss/shame.scss */
     .section:nth-of-type(odd) .qbox__content:before, .section:nth-of-type(even) .qbox__content:before {
       position: absolute;
       z-index: 1;
@@ -258,7 +258,7 @@ html, body {
       background-repeat: no-repeat;
       background-size: contain;
       content: ''; }
-  /* line 56, scss/shame.scss */
+  /* line 63, scss/shame.scss */
   .section:nth-of-type(odd) .qbox__content:before {
     top: -48px;
     top: -3rem;
@@ -269,7 +269,7 @@ html, body {
     -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
             transform: translateX(-50%); }
-  /* line 67, scss/shame.scss */
+  /* line 74, scss/shame.scss */
   .section:nth-of-type(even) .qbox__content:before {
     top: -24px;
     top: -1.5rem;
@@ -280,23 +280,23 @@ html, body {
     -webkit-transform: translateX(-50%) rotate(-170deg);
         -ms-transform: translateX(-50%) rotate(-170deg);
             transform: translateX(-50%) rotate(-170deg); }
-  /* line 78, scss/shame.scss */
+  /* line 85, scss/shame.scss */
   .section--question-2 .qbox__illustration img, .section--question-7 .qbox__illustration img {
     top: 0;
-    -webkit-transform: none;
-        -ms-transform: none;
-            transform: none; }
+    -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+            transform: translate(-50%, 0); }
   @media (min-width: 768px) {
-    /* line 6, scss/shame.scss */
+    /* line 13, scss/shame.scss */
     .section {
       background-color: #FFFFFF; }
-      /* line 87, scss/shame.scss */
+      /* line 94, scss/shame.scss */
       .section .fp-scroller, .section__form {
         height: 100%; }
-      /* line 92, scss/shame.scss */
+      /* line 99, scss/shame.scss */
       .section__button {
         bottom: 4rem; }
-      /* line 98, scss/shame.scss */
+      /* line 105, scss/shame.scss */
       .section:nth-of-type(odd) .qbox__content:before {
         top: initial;
         left: -9.1875rem;
@@ -307,7 +307,7 @@ html, body {
         -webkit-transform: translateX(0);
             -ms-transform: translateX(0);
                 transform: translateX(0); }
-      /* line 110, scss/shame.scss */
+      /* line 117, scss/shame.scss */
       .section:nth-of-type(even) .qbox__content:before {
         top: initial;
         left: -4.125rem;
@@ -316,13 +316,13 @@ html, body {
             -ms-transform: translateX(0) rotate(-170deg);
                 transform: translateX(0) rotate(-170deg); } }
   @media (max-height: 590px) {
-    /* line 121, scss/shame.scss */
+    /* line 128, scss/shame.scss */
     .section .fp-scrollable {
       overflow-y: scroll; }
-    /* line 124, scss/shame.scss */
+    /* line 131, scss/shame.scss */
     .section .qbox {
       height: initial; }
-    /* line 128, scss/shame.scss */
+    /* line 135, scss/shame.scss */
     .section .section__button {
       position: relative;
       left: 0;
@@ -333,19 +333,17 @@ html, body {
           -ms-transform: translateX(0);
               transform: translateX(0); } }
   @media (max-height: 690px) {
-    /* line 139, scss/shame.scss */
+    /* line 146, scss/shame.scss */
     .section .qbox__wrap {
       background-color: #FFFFFF; } }
   @media (max-height: 890px) {
-    /* line 145, scss/shame.scss */
+    /* line 152, scss/shame.scss */
     .section__button {
       bottom: 1.5rem; }
-    /* line 150, scss/shame.scss */
-    .section:last-of-type .qbox__wrap {
-      padding: 4rem 0; }
-    /* line 155, scss/shame.scss */
-    .section .qbox__wrap {
-      padding: 4rem 0; } }
+    /* line 156, scss/shame.scss */
+    .section .qbox__content {
+      padding: 4rem 0 0;
+      overflow: hidden; } }
 
 /*atoms*/
 /* line 1, ../templates/partials/button/button.scss */
@@ -491,7 +489,7 @@ html, body {
 /* line 57, ../templates/partials/answers/text/text.scss */
 .text__count {
   position: relative;
-  z-index: -1;
+  z-index: 0;
   width: 56px;
   width: 3.5rem;
   height: 56px;
@@ -562,120 +560,120 @@ html, body {
     font-weight: 600;
     line-height: 1.75rem; } }
 
-/* line 1, ../templates/partials/qbox/qbox.scss */
-.qbox {
-  padding-top: 48px;
-  padding-top: 3rem; }
-  /* line 4, ../templates/partials/qbox/qbox.scss */
-  .qbox__illustration {
-    position: relative;
-    padding-bottom: 165px;
-    padding-bottom: 10.3125rem;
-    height: 0;
-    overflow: hidden; }
-    /* line 10, ../templates/partials/qbox/qbox.scss */
-    .qbox__illustration img {
-      position: absolute;
-      top: 50%;
-      left: 50%;
+/* line 2, ../templates/partials/qbox/qbox.scss */
+.qbox__illustration {
+  position: relative;
+  padding-bottom: 165px;
+  padding-bottom: 10.3125rem;
+  height: 0;
+  overflow: hidden; }
+  /* line 8, ../templates/partials/qbox/qbox.scss */
+  .qbox__illustration img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    max-width: 300px;
+    max-width: 18.75rem;
+    display: block;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
+
+/* line 19, ../templates/partials/qbox/qbox.scss */
+.qbox__title {
+  margin-top: 40px;
+  margin-top: 2.5rem;
+  font-family: "Museo Sans Condensed", sans-serif;
+  font-size: 24px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 32px;
+  line-height: 2rem; }
+
+/* line 27, ../templates/partials/qbox/qbox.scss */
+.qbox__answers {
+  margin-top: 32px;
+  margin-top: 2rem; }
+
+@media (min-width: 768px) {
+  /* line 1, ../templates/partials/qbox/qbox.scss */
+  .qbox {
+    padding-top: 0;
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    /* line 37, ../templates/partials/qbox/qbox.scss */
+    .qbox__wrap {
+      padding: 6rem 0 5.5rem;
       width: 100%;
-      max-width: 300px;
-      max-width: 18.75rem;
-      display: block;
-      -webkit-transform: translate(-50%, -50%);
-          -ms-transform: translate(-50%, -50%);
-              transform: translate(-50%, -50%); }
-  /* line 21, ../templates/partials/qbox/qbox.scss */
-  .qbox__title {
-    margin-top: 40px;
-    margin-top: 2.5rem;
-    font-family: "Museo Sans Condensed", sans-serif;
-    font-size: 24px;
-    font-size: 1.5rem;
-    font-weight: 700;
-    line-height: 32px;
-    line-height: 2rem; }
-  /* line 29, ../templates/partials/qbox/qbox.scss */
-  .qbox__answers {
-    margin-top: 32px;
-    margin-top: 2rem; }
-  @media (min-width: 768px) {
-    /* line 1, ../templates/partials/qbox/qbox.scss */
-    .qbox {
-      padding-top: 0;
-      height: 100%;
+      background-color: #F7F6F6; }
+      /* line 42, ../templates/partials/qbox/qbox.scss */
+      .qbox__wrap .wrapper {
+        position: relative;
+        z-index: 1; }
+    /* line 48, ../templates/partials/qbox/qbox.scss */
+    .qbox__content {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-      -webkit-align-items: center;
-          -ms-flex-align: center;
-              align-items: center; }
-      /* line 39, ../templates/partials/qbox/qbox.scss */
-      .qbox__wrap {
-        padding: 6rem 0 5.5rem;
-        width: 100%;
-        background-color: #F7F6F6; }
-        /* line 44, ../templates/partials/qbox/qbox.scss */
-        .qbox__wrap .wrapper {
-          position: relative;
-          z-index: 1; }
-      /* line 50, ../templates/partials/qbox/qbox.scss */
-      .qbox__content {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex; }
-      /* line 54, ../templates/partials/qbox/qbox.scss */
-      .qbox__illustration {
-        width: calc(99.9% * 5/12 - (0.75rem - 0.75rem * 5/12));
-        padding-bottom: 0;
-        height: initial;
-        -webkit-align-self: flex-end;
-            -ms-flex-item-align: end;
-                align-self: flex-end; }
-      .qbox__illustration:nth-child(1n) {
-        float: left;
-        margin-right: 0.75rem;
-        clear: none; }
-      .qbox__illustration:last-child {
-        margin-right: 0; }
-      .qbox__illustration:nth-child(12n) {
-        margin-right: 0;
-        float: right; }
-      .qbox__illustration:nth-child(12n + 1) {
-        clear: both; }
-        /* line 60, ../templates/partials/qbox/qbox.scss */
-        .qbox__illustration img {
-          position: relative;
-          top: 0;
-          left: 0;
-          -webkit-transform: none;
-              -ms-transform: none;
-                  transform: none; }
-      /* line 68, ../templates/partials/qbox/qbox.scss */
-      .qbox__info {
-        width: calc(99.9% * 7/12 - (0.75rem - 0.75rem * 7/12)); }
-      .qbox__info:nth-child(1n) {
-        float: left;
-        margin-right: 0.75rem;
-        clear: none; }
-      .qbox__info:last-child {
-        margin-right: 0; }
-      .qbox__info:nth-child(12n) {
-        margin-right: 0;
-        float: right; }
-      .qbox__info:nth-child(12n + 1) {
-        clear: both; }
-      /* line 72, ../templates/partials/qbox/qbox.scss */
-      .qbox__title {
-        margin-top: 0; } }
-  @media (min-width: 1060px) {
-    /* line 78, ../templates/partials/qbox/qbox.scss */
+      display: flex; }
+    /* line 52, ../templates/partials/qbox/qbox.scss */
+    .qbox__illustration {
+      width: calc(99.9% * 5/12 - (0.75rem - 0.75rem * 5/12));
+      padding-bottom: 0;
+      height: initial;
+      -webkit-align-self: flex-end;
+          -ms-flex-item-align: end;
+              align-self: flex-end; }
+    .qbox__illustration:nth-child(1n) {
+      float: left;
+      margin-right: 0.75rem;
+      clear: none; }
+    .qbox__illustration:last-child {
+      margin-right: 0; }
+    .qbox__illustration:nth-child(12n) {
+      margin-right: 0;
+      float: right; }
+    .qbox__illustration:nth-child(12n + 1) {
+      clear: both; }
+      /* line 58, ../templates/partials/qbox/qbox.scss */
+      .qbox__illustration img {
+        position: relative;
+        top: 0;
+        left: 0;
+        -webkit-transform: none;
+            -ms-transform: none;
+                transform: none; }
+    /* line 66, ../templates/partials/qbox/qbox.scss */
+    .qbox__info {
+      width: calc(99.9% * 7/12 - (0.75rem - 0.75rem * 7/12)); }
+    .qbox__info:nth-child(1n) {
+      float: left;
+      margin-right: 0.75rem;
+      clear: none; }
+    .qbox__info:last-child {
+      margin-right: 0; }
+    .qbox__info:nth-child(12n) {
+      margin-right: 0;
+      float: right; }
+    .qbox__info:nth-child(12n + 1) {
+      clear: both; }
+    /* line 70, ../templates/partials/qbox/qbox.scss */
     .qbox__title {
-      font-size: 1.75rem;
-      line-height: 2.5rem; } }
+      margin-top: 0; } }
+
+@media (min-width: 1060px) {
+  /* line 76, ../templates/partials/qbox/qbox.scss */
+  .qbox__title {
+    font-size: 1.75rem;
+    line-height: 2.5rem; } }
 
 /* line 1, ../templates/pages/landing/landing.scss */
 .page--landing {
