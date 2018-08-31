@@ -6,7 +6,22 @@
             $menu = $('.js-header-menu'),
             $tweetBtn = $('.js-tweet'),
             $fbBtn = $('.js-fb'),
-            themeUrl = window.location.origin;
+            currentUrl = window.location.href,
+            themeUrl = window.location.origin,
+            metaFbTitle = 'TESTS: Kur palika mana alga?',
+            metaFbName = 'Ferratum',
+            metaFbDesc = 'Vai vari izdzīvot līdz mēneša beigām? Izpildi testu un noskaidro savu tērētāja tipu!',
+            metaFbImg;
+
+        /*fb sharing */
+
+        if (currentUrl.indexOf('apdomkelis') > -1) {
+            metaFbImg = themeUrl + '/assets/img/fb/fb-1.png';
+        } else if (currentUrl.indexOf('skerdeklis') > -1) {
+            metaFbImg = themeUrl + '/assets/img/fb/fb-2.png';
+        } else if (currentUrl.indexOf('taupeklis') > -1) {
+            metaFbImg = themeUrl + '/assets/img/fb/fb-3.png';
+        }
 
         $burger.on('click', function (e) {
             e.preventDefault();
@@ -29,10 +44,10 @@
                 action_properties: JSON.stringify({
                     object: {
                         'og:url': themeUrl,
-                        'og:title': 'TESTS: Un kā tu rīkojies ar naudu?',
-                        'og:site_name': 'Ienāc Kur mana alga?',
-                        'og:description': 'Nosaki savu finanšu personības tipu!',
-                        'og:image': themeUrl + '/assets/img/landing.jpg'
+                        'og:title': metaFbTitle,
+                        'og:site_name': metaFbName,
+                        'og:description': metaFbDesc,
+                        'og:image': metaFbImg
                     }
                 })
             });
