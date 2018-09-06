@@ -1323,6 +1323,8 @@ html, body {
     text-transform: uppercase; }
   /* line 93, ../templates/pages/result/result.scss */
   .result__share-list {
+    margin-top: 16px;
+    margin-top: 1rem;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1335,10 +1337,8 @@ html, body {
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between; }
-  /* line 99, ../templates/pages/result/result.scss */
+  /* line 100, ../templates/pages/result/result.scss */
   .result__share-soc {
-    margin-top: 16px;
-    margin-top: 1rem;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1467,10 +1467,10 @@ html, body {
   .result__subtitle {
     font-size: 1.875rem;
     line-height: 2.5rem; }
-  /* line 198, ../templates/pages/result/result.scss */
-  .result__description {
+  /* line 199, ../templates/pages/result/result.scss */
+  .result__description p {
     line-height: 2rem; }
-  /* line 202, ../templates/pages/result/result.scss */
+  /* line 204, ../templates/pages/result/result.scss */
   .result__box {
     width: calc(99.9% * 10/12 - (0.75rem - 0.75rem * 10/12));
     margin-left: calc(99.9% * (-1/12 * -1) - (0.75rem - 0.75rem * (-1/12 * -1)) + 0.75rem) !important; }
@@ -1485,7 +1485,7 @@ html, body {
     float: right; }
   .result__box:nth-child(12n + 1) {
     clear: both; }
-  /* line 207, ../templates/pages/result/result.scss */
+  /* line 209, ../templates/pages/result/result.scss */
   .result__share {
     width: calc(99.9% * 11/12 - (0.75rem - 0.75rem * 11/12));
     margin-left: calc(99.9% * (-1/12 * -1) - (0.75rem - 0.75rem * (-1/12 * -1)) + 0.75rem) !important;
@@ -1509,11 +1509,20 @@ html, body {
     float: right; }
   .result__share:nth-child(12n + 1) {
     clear: both; }
-    /* line 214, ../templates/pages/result/result.scss */
+    /* line 216, ../templates/pages/result/result.scss */
     .result__share-title {
       font-size: 1.75rem;
       line-height: 2.5rem; }
-    /* line 219, ../templates/pages/result/result.scss */
+    /* line 222, ../templates/pages/result/result.scss */
+    .result__share-logo img {
+      width: 7.875rem; }
+    /* line 227, ../templates/pages/result/result.scss */
+    .result__share-list {
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+          -ms-flex: 1;
+              flex: 1; }
+    /* line 231, ../templates/pages/result/result.scss */
     .result__share-soc {
       margin-top: 0;
       padding-left: 4rem; } }
