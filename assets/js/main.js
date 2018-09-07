@@ -15,11 +15,8 @@
 
         /*fb sharing */
 
-        console.log('luinks: ', currentUrl);
         if (currentUrl.indexOf('apdomeklis') > -1) {
-            console.log('AAAAAAAAAAAAAAAAA');
             metaFbImg = themeUrl + '/assets/img/fb/fb-1.png';
-            console.log('bilde', metaFbImg);
         } else if (currentUrl.indexOf('skerdeklis') > -1) {
             metaFbImg = themeUrl + '/assets/img/fb/fb-2.png';
         } else if (currentUrl.indexOf('taupeklis') > -1) {
@@ -42,8 +39,6 @@
 
         $fbBtn.on('click', function(e){
             e.preventDefault();
-            console.log('tema: ', themeUrl);
-            console.log('bilde', metaFbImg);
             FB.ui({
                 method: 'share_open_graph',
                 action_type: 'og.shares',
