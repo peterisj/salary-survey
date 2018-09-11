@@ -940,6 +940,25 @@ html, body {
     height: 310px;
     height: 19.375rem; }
   /* line 77, ../templates/pages/landing/landing.scss */
+  .landing__hero-content {
+    position: relative; }
+  /* line 81, ../templates/pages/landing/landing.scss */
+  .landing__hero-logo {
+    position: absolute;
+    top: 24px;
+    top: 1.5rem;
+    right: 24px;
+    right: 1.5rem; }
+    /* line 86, ../templates/pages/landing/landing.scss */
+    .landing__hero-logo a, .landing__hero-logo img {
+      display: block; }
+    /* line 90, ../templates/pages/landing/landing.scss */
+    .landing__hero-logo img {
+      width: 104px;
+      width: 6.5rem;
+      height: 38px;
+      height: 2.375rem; }
+  /* line 96, ../templates/pages/landing/landing.scss */
   .landing__hero-title {
     margin-bottom: 42px;
     margin-bottom: 2.625rem;
@@ -952,29 +971,29 @@ html, body {
     line-height: 3.5rem;
     text-align: center;
     text-transform: uppercase; }
-  /* line 88, ../templates/pages/landing/landing.scss */
+  /* line 107, ../templates/pages/landing/landing.scss */
   .landing__hero-btn {
     text-align: center; }
-  /* line 92, ../templates/pages/landing/landing.scss */
+  /* line 111, ../templates/pages/landing/landing.scss */
   .landing__hero-info {
     position: relative;
     z-index: 0; }
-    /* line 96, ../templates/pages/landing/landing.scss */
+    /* line 115, ../templates/pages/landing/landing.scss */
     .landing__hero-info--mobile {
       position: relative;
       padding: 112px 0 98px;
       padding: 7rem 0 6.125rem; }
-    /* line 101, ../templates/pages/landing/landing.scss */
+    /* line 120, ../templates/pages/landing/landing.scss */
     .landing__hero-info--desktop {
       display: none; }
-  /* line 106, ../templates/pages/landing/landing.scss */
+  /* line 125, ../templates/pages/landing/landing.scss */
   .landing__hero-list {
     position: relative;
     z-index: 1;
     margin-top: 40px;
     margin-top: 2.5rem;
     overflow: hidden; }
-  /* line 113, ../templates/pages/landing/landing.scss */
+  /* line 132, ../templates/pages/landing/landing.scss */
   .landing__hero-item {
     width: calc(99.9% * 4/4 - (0.75rem - 0.75rem * 4/4)); }
   .landing__hero-item:nth-child(1n) {
@@ -989,11 +1008,11 @@ html, body {
     float: right; }
   .landing__hero-item:nth-child(4n + 1) {
     clear: both; }
-    /* line 116, ../templates/pages/landing/landing.scss */
+    /* line 135, ../templates/pages/landing/landing.scss */
     .landing__hero-item + .landing__hero-item {
       margin-top: 20px;
       margin-top: 1.25rem; }
-  /* line 121, ../templates/pages/landing/landing.scss */
+  /* line 140, ../templates/pages/landing/landing.scss */
   .landing__hero-count {
     width: calc(99.9% * 1/4 - (0.75rem - 0.75rem * 1/4));
     font-family: "Museo Sans Condensed", sans-serif;
@@ -1014,7 +1033,7 @@ html, body {
     float: right; }
   .landing__hero-count:nth-child(4n + 1) {
     clear: both; }
-  /* line 130, ../templates/pages/landing/landing.scss */
+  /* line 149, ../templates/pages/landing/landing.scss */
   .landing__hero-desc {
     width: calc(99.9% * 3/4 - (0.75rem - 0.75rem * 3/4));
     font-size: 18px;
@@ -1034,7 +1053,7 @@ html, body {
   .landing__hero-desc:nth-child(4n + 1) {
     clear: both; }
 
-/* line 137, ../templates/pages/landing/landing.scss */
+/* line 156, ../templates/pages/landing/landing.scss */
 .landing__questions {
   position: relative;
   z-index: 1;
@@ -1043,7 +1062,7 @@ html, body {
   padding-bottom: 52px;
   padding-bottom: 3.25rem;
   background-color: #F7F6F6; }
-  /* line 144, ../templates/pages/landing/landing.scss */
+  /* line 163, ../templates/pages/landing/landing.scss */
   .landing__questions:before {
     position: absolute;
     top: -80px;
@@ -1061,7 +1080,7 @@ html, body {
     -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
             transform: translateX(-50%); }
-  /* line 159, ../templates/pages/landing/landing.scss */
+  /* line 178, ../templates/pages/landing/landing.scss */
   .landing__questions-item {
     margin: 0 auto;
     display: -webkit-box;
@@ -1078,24 +1097,24 @@ html, body {
         -ms-flex-pack: center;
             justify-content: center;
     text-align: center; }
-    /* line 166, ../templates/pages/landing/landing.scss */
+    /* line 185, ../templates/pages/landing/landing.scss */
     .landing__questions-item + .landing__questions-item {
       margin-top: 50px;
       margin-top: 3.125rem; }
-  /* line 171, ../templates/pages/landing/landing.scss */
+  /* line 190, ../templates/pages/landing/landing.scss */
   .landing__questions-icon {
     margin: 0 auto;
     max-width: 130px;
     max-width: 8.125rem;
     display: inline-block; }
-    /* line 176, ../templates/pages/landing/landing.scss */
+    /* line 195, ../templates/pages/landing/landing.scss */
     .landing__questions-icon img {
       display: block;
       width: 130px;
       width: 8.125rem;
       height: 130px;
       height: 8.125rem; }
-  /* line 183, ../templates/pages/landing/landing.scss */
+  /* line 202, ../templates/pages/landing/landing.scss */
   .landing__questions-title {
     margin: 18px auto 0;
     margin: 1.125rem auto 0;
@@ -1106,14 +1125,14 @@ html, body {
     font-size: 1.125rem;
     line-height: 24px;
     line-height: 1.5rem; }
-  /* line 191, ../templates/pages/landing/landing.scss */
+  /* line 210, ../templates/pages/landing/landing.scss */
   .landing__questions-btn {
     margin-top: 42px;
     margin-top: 2.625rem;
     text-align: center; }
 
 @media (min-width: 600px) {
-  /* line 199, ../templates/pages/landing/landing.scss */
+  /* line 218, ../templates/pages/landing/landing.scss */
   .landing__hero-item {
     width: calc(99.9% * 1/2 - (0.75rem - 0.75rem * 1/2)); }
   .landing__hero-item:nth-child(1n) {
@@ -1127,52 +1146,52 @@ html, body {
     float: right; }
   .landing__hero-item:nth-child(2n + 1) {
     clear: both; }
-    /* line 202, ../templates/pages/landing/landing.scss */
+    /* line 221, ../templates/pages/landing/landing.scss */
     .landing__hero-item + .landing__hero-item {
       margin-top: 0; } }
 
 @media (min-width: 768px) {
-  /* line 210, ../templates/pages/landing/landing.scss */
+  /* line 229, ../templates/pages/landing/landing.scss */
   .landing__hero {
     margin-bottom: -5rem;
     padding-bottom: 0; }
-    /* line 215, ../templates/pages/landing/landing.scss */
+    /* line 234, ../templates/pages/landing/landing.scss */
     .landing__hero-bg--mobile {
       display: none; }
-    /* line 219, ../templates/pages/landing/landing.scss */
+    /* line 238, ../templates/pages/landing/landing.scss */
     .landing__hero-bg--desktop {
       display: block; }
-    /* line 223, ../templates/pages/landing/landing.scss */
+    /* line 242, ../templates/pages/landing/landing.scss */
     .landing__hero-bg:before {
       width: 40%; }
-    /* line 227, ../templates/pages/landing/landing.scss */
+    /* line 246, ../templates/pages/landing/landing.scss */
     .landing__hero-bg:after {
       top: 3.75rem;
       right: 5%;
       width: 15%; }
-    /* line 234, ../templates/pages/landing/landing.scss */
+    /* line 253, ../templates/pages/landing/landing.scss */
     .landing__hero-title {
       margin: 0 auto 2.625rem;
       max-width: 39rem; }
-    /* line 239, ../templates/pages/landing/landing.scss */
+    /* line 258, ../templates/pages/landing/landing.scss */
     .landing__hero-content {
       padding: 5rem 0 4rem; }
-    /* line 244, ../templates/pages/landing/landing.scss */
+    /* line 263, ../templates/pages/landing/landing.scss */
     .landing__hero-info--mobile {
       display: none; }
-    /* line 248, ../templates/pages/landing/landing.scss */
+    /* line 267, ../templates/pages/landing/landing.scss */
     .landing__hero-info--desktop {
       display: block; }
-    /* line 253, ../templates/pages/landing/landing.scss */
+    /* line 272, ../templates/pages/landing/landing.scss */
     .landing__hero-count, .landing__hero-desc {
       color: #FFFFFF; }
-    /* line 258, ../templates/pages/landing/landing.scss */
+    /* line 277, ../templates/pages/landing/landing.scss */
     .landing__hero-desc {
       font-weight: 700; }
-  /* line 264, ../templates/pages/landing/landing.scss */
+  /* line 283, ../templates/pages/landing/landing.scss */
   .landing__questions-list {
     overflow: hidden; }
-  /* line 268, ../templates/pages/landing/landing.scss */
+  /* line 287, ../templates/pages/landing/landing.scss */
   .landing__questions-item {
     width: calc(99.9% * 4/12 - (0.75rem - 0.75rem * 4/12));
     padding: 0 0.5rem; }
@@ -1187,32 +1206,35 @@ html, body {
     float: right; }
   .landing__questions-item:nth-child(12n + 1) {
     clear: both; }
-    /* line 272, ../templates/pages/landing/landing.scss */
+    /* line 291, ../templates/pages/landing/landing.scss */
     .landing__questions-item + .landing__questions-item {
       margin-top: 0; }
-  /* line 277, ../templates/pages/landing/landing.scss */
+  /* line 296, ../templates/pages/landing/landing.scss */
   .landing__questions-btn {
     margin-top: 3.25rem; } }
 
 @media (min-width: 1060px) {
-  /* line 284, ../templates/pages/landing/landing.scss */
+  /* line 303, ../templates/pages/landing/landing.scss */
   .landing__hero {
     padding-bottom: 4rem; }
-    /* line 288, ../templates/pages/landing/landing.scss */
+    /* line 307, ../templates/pages/landing/landing.scss */
     .landing__hero-bg:after {
       top: 7.5rem; }
-    /* line 293, ../templates/pages/landing/landing.scss */
+    /* line 312, ../templates/pages/landing/landing.scss */
+    .landing__hero-logo {
+      top: 3rem; }
+    /* line 316, ../templates/pages/landing/landing.scss */
     .landing__hero-title {
       font-size: 4.625rem;
       line-height: 4.625rem; }
-    /* line 298, ../templates/pages/landing/landing.scss */
+    /* line 321, ../templates/pages/landing/landing.scss */
     .landing__hero-list {
       margin-top: 4.125rem; }
-    /* line 302, ../templates/pages/landing/landing.scss */
+    /* line 325, ../templates/pages/landing/landing.scss */
     .landing__hero-count {
       font-size: 4.125rem;
       line-height: 4.125rem; }
-    /* line 307, ../templates/pages/landing/landing.scss */
+    /* line 330, ../templates/pages/landing/landing.scss */
     .landing__hero-desc {
       font-size: 1.5rem;
       line-height: 2rem; } }
