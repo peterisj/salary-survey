@@ -947,8 +947,7 @@ html, body {
     position: absolute;
     top: 24px;
     top: 1.5rem;
-    right: 24px;
-    right: 1.5rem; }
+    left: 3%; }
     /* line 86, ../templates/pages/landing/landing.scss */
     .landing__hero-logo a, .landing__hero-logo img {
       display: block; }
@@ -1170,28 +1169,32 @@ html, body {
       right: 5%;
       width: 15%; }
     /* line 253, ../templates/pages/landing/landing.scss */
+    .landing__hero-logo {
+      right: 1.5rem;
+      left: initial; }
+    /* line 258, ../templates/pages/landing/landing.scss */
     .landing__hero-title {
       margin: 0 auto 2.625rem;
       max-width: 39rem; }
-    /* line 258, ../templates/pages/landing/landing.scss */
+    /* line 263, ../templates/pages/landing/landing.scss */
     .landing__hero-content {
       padding: 5rem 0 4rem; }
-    /* line 263, ../templates/pages/landing/landing.scss */
+    /* line 268, ../templates/pages/landing/landing.scss */
     .landing__hero-info--mobile {
       display: none; }
-    /* line 267, ../templates/pages/landing/landing.scss */
+    /* line 272, ../templates/pages/landing/landing.scss */
     .landing__hero-info--desktop {
       display: block; }
-    /* line 272, ../templates/pages/landing/landing.scss */
+    /* line 277, ../templates/pages/landing/landing.scss */
     .landing__hero-count, .landing__hero-desc {
       color: #FFFFFF; }
-    /* line 277, ../templates/pages/landing/landing.scss */
+    /* line 282, ../templates/pages/landing/landing.scss */
     .landing__hero-desc {
       font-weight: 700; }
-  /* line 283, ../templates/pages/landing/landing.scss */
+  /* line 288, ../templates/pages/landing/landing.scss */
   .landing__questions-list {
     overflow: hidden; }
-  /* line 287, ../templates/pages/landing/landing.scss */
+  /* line 292, ../templates/pages/landing/landing.scss */
   .landing__questions-item {
     width: calc(99.9% * 4/12 - (0.75rem - 0.75rem * 4/12));
     padding: 0 0.5rem; }
@@ -1206,35 +1209,35 @@ html, body {
     float: right; }
   .landing__questions-item:nth-child(12n + 1) {
     clear: both; }
-    /* line 291, ../templates/pages/landing/landing.scss */
+    /* line 296, ../templates/pages/landing/landing.scss */
     .landing__questions-item + .landing__questions-item {
       margin-top: 0; }
-  /* line 296, ../templates/pages/landing/landing.scss */
+  /* line 301, ../templates/pages/landing/landing.scss */
   .landing__questions-btn {
     margin-top: 3.25rem; } }
 
 @media (min-width: 1060px) {
-  /* line 303, ../templates/pages/landing/landing.scss */
+  /* line 308, ../templates/pages/landing/landing.scss */
   .landing__hero {
     padding-bottom: 4rem; }
-    /* line 307, ../templates/pages/landing/landing.scss */
+    /* line 312, ../templates/pages/landing/landing.scss */
     .landing__hero-bg:after {
       top: 7.5rem; }
-    /* line 312, ../templates/pages/landing/landing.scss */
+    /* line 317, ../templates/pages/landing/landing.scss */
     .landing__hero-logo {
       top: 3rem; }
-    /* line 316, ../templates/pages/landing/landing.scss */
+    /* line 321, ../templates/pages/landing/landing.scss */
     .landing__hero-title {
       font-size: 4.625rem;
       line-height: 4.625rem; }
-    /* line 321, ../templates/pages/landing/landing.scss */
+    /* line 326, ../templates/pages/landing/landing.scss */
     .landing__hero-list {
       margin-top: 4.125rem; }
-    /* line 325, ../templates/pages/landing/landing.scss */
+    /* line 330, ../templates/pages/landing/landing.scss */
     .landing__hero-count {
       font-size: 4.125rem;
       line-height: 4.125rem; }
-    /* line 330, ../templates/pages/landing/landing.scss */
+    /* line 335, ../templates/pages/landing/landing.scss */
     .landing__hero-desc {
       font-size: 1.5rem;
       line-height: 2rem; } }
